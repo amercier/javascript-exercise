@@ -1,0 +1,74 @@
+{
+  "name": "javascript-exercise",
+  "private": true,
+  "author": "Alex Mercier <pro.alexandre.mercier@gmail.com>",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": ">=5.0.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-prettier": "3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-unicorn": "6.0.1",
+    "husky": "^1.2.0",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*": "prettier --list-different",
+    "*.js": [
+      "eslint",
+      "jest --bail --findRelatedTests"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "plugin:prettier/recommended",
+      "plugin:unicorn/recommended",
+      "prettier",
+      "prettier/unicorn"
+    ],
+    "env": {
+      "browser": false
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.spec.js"
+        ],
+        "env": {
+          "jest": true
+        },
+        "rules": {
+          "import/no-extraneous-dependencies": [
+            "error",
+            {
+              "devDependencies": true
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

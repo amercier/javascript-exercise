@@ -6,7 +6,9 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dot-object": "^1.7.1"
+  },
   "devDependencies": {
     "eslint": ">=5.0.0",
     "eslint-config-airbnb-base": "13.1.0",

@@ -4,6 +4,8 @@ before_script:
   - npm run lint
 script:
   - yarn test --coverage
+after_success:
+  - codecov
 cache:
   directories:
     - $HOME/.npm

@@ -2,6 +2,7 @@
   "name": "javascript-exercise",
   "private": true,
   "author": "Alex Mercier <pro.alexandre.mercier@gmail.com>",
+  "license": "ISC",
   "engines": {
     "node": ">=10",
     "npm": ">=6"

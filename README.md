@@ -8,3 +8,7 @@
 - [Real-world implementation](,/src/resolve-objects-real.js),
 - [Actual implementation](,/src/resolve-objects.js) (for the purpose of the exercise),
 - [Specs](,/src/resolve-objects.spec.js).
+
+## License
+
+[![License](https://img.shields.io/badge/license-ISC-brightgreen.svg)](LICENSE.md)

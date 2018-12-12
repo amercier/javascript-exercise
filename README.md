@@ -9,6 +9,22 @@
 - [Actual implementation](,/src/resolve-objects.js) (for the purpose of the exercise),
 - [Specs](,/src/resolve-objects.spec.js).
 
+## Getting started
+
+Requires [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/en/).
+
+```bash
+# Clone the repository
+git clone https://github.com/amercier/javascript-exercise.git
+cd javascript-exercise
+
+# Install dependencies
+yarn
+
+# Run tests
+yarn test
+```
+
 ## License
 
 [![License](https://img.shields.io/badge/license-ISC-brightgreen.svg)](LICENSE.md)

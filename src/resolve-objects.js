@@ -31,8 +31,8 @@
  */
 function resolveObjects(object, separator = '.') {
   const result = {};
-  let currentResult = result;
   Object.entries(object).forEach(([key, value]) => {
+    let currentResult = result;
     key.split(separator).forEach((currentKey, keyIndex, allKeys) => {
       if (keyIndex === allKeys.length - 1) {
         currentResult[currentKey] = value;
